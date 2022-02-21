@@ -1,0 +1,132 @@
+*{
+    margin: 0%;
+}
+body{
+    background-color: #151515;
+    font-family: 'Inconsolata', monospace;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.sidenav{
+    margin: 25px;
+    
+}
+.iconStyle{
+    margin-top:14rem;
+    font-size:50px;
+    text-align: center;
+    color: #fff;
+}
+.iconStyle:hover{
+    color:greenyellow;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #323437;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.type-container{
+    background-color: #fff;
+    /* width: 600px;
+    height: 250px; */
+    display: flex;
+    flex-direction:column;
+    width: 60%;
+    min-height: 300px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow : 0 20px 40px rgba(0,0,0,0.5);
+    /* top: ; */
+}
+.stats{
+    margin:10px 20px;
+    /* text-align:right; */
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.stats span{
+    font-weight: 600;
+}
+.quotes{
+    /* background-color: rgb(216, 25, 25); */
+    margin: 0px 10px;
+    padding: 0px 10px;
+}
+textarea{
+    resize: none;
+    width:95% ;
+    margin:20px ;
+    border-radius: 5px;
+    font-size:16px;
+    padding: 10px 2px;
+    /* border: none; */
+    /* background-color: #151515; */
+
+}
+.buttons{
+    margin:15px;
+    /* display: none; */
+    /* background-color: rgb(172, 40, 40); */
+}
+button{
+    background-color: #323437;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    transition: transform .1s ease-in-out;
+
+}
+button:hover{
+    transform: scale(1.5);
+}
+.results{
+    text-align: center;
+    margin-bottom: 15px;
+    width: 100%;
+    display: none;
+}
+.wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* font-family: 'Inconsolata', monospace; */
+    margin: 10px 0px;
+}
+.success{
+    /* color: rgb(0, 0, 0); */
+    transition:transform .2s;
+    transform:scale(1.5);
+    font-weight: 700;
+}
+
+.fail{
+    color: #e81c4e; 
+    font-weight:800;
+}
+.footer{
+    width:100vw;
+    height:15vh;
+    font-size: 20px;
+    background-color: #af9006ce;
+    /* padding-top: 25px; */
+    display: flex;
+    flex-direction: row;
+}
+.emt{
+    /* margin: 25px; */
+    width: 100px;
+    height: 15vh;
+    background-color: #151515;
+}
+.footer-text{
+    color: #fff;
+    text-align: center;
+}

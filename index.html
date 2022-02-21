@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypingGeek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="sidenav">
+            <i class="fa-solid fa-arrow-rotate-right iconStyle id="restart-test" onclick="restartTest()"></i>
+        </div>
+    
+        <div class="main" id = "mainId">
+        
+            <div class="type-container">
+                <div class="stats">
+                    <p>Time: <span id = "timer">0s</span></p>
+                    <p>Mistakes:<span id="mistakes">0</span></p>
+                </div>
+                <div class = "quotes" id = "quote" onmousedown="return false" onselectstart ="return false">
+    
+                  
+                </div>
+                <textarea rows="5" id="quote-input" placeholder="Type here when the test starts"></textarea>
+                <div class="buttons">
+                    <button id="start-test" onclick="startTest()">Start</button>
+                    <button id = "stop-test" onclick="displayResult()">Stop</button>
+                </div>
+                <div class="results">
+                    <h3>Results</h3>
+                    <div class="wrapper">
+                        <p>Accuracy: <span id = "accuracy"></span></p>
+                        <p>Speed: <span id = "wpm"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="restart">
+        <button id="restart-test" onclick="restartTest()">Restart</button>               
+    </div> -->
+    <div class="footer">
+        <div class="emt"></div>
+        <p class="footer-text">Crafted by Shivam Gupta</p>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
